@@ -7,57 +7,58 @@
     android:background="@color/colorMainBackground"
     tools:context=".MainActivity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="match_parent"
-            android:layout_height="463dp"
-            android:contentDescription="TransportCar"
-            android:paddingLeft="15sp"
-            android:paddingRight="15sp"
-            android:paddingBottom="15sp"
+            android:layout_height="354dp"
             android:layout_marginBottom="15sp"
+            android:paddingTop="15sp"
+            android:paddingBottom="15sp"
             app:srcCompat="@drawable/main_menu_transport_car" />
 
         <Button
             android:id="@+id/buttonCall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10sp"
             android:layout_marginLeft="40sp"
             android:layout_marginRight="40sp"
             android:background="@drawable/button"
-            android:text="Звонок диспетчеру"
+            android:padding="10sp"
+            android:text="@string/buttonCall"
             android:textColor="@color/white" />
 
         <Button
             android:id="@+id/buttonOrder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15sp"
-            android:padding="10sp"
             android:layout_marginLeft="40sp"
+            android:layout_marginTop="15sp"
             android:layout_marginRight="40sp"
             android:background="@drawable/button"
-            android:text="Заказать машину"
+            android:padding="10sp"
+            android:text="@string/buttonOrder"
             android:textColor="@color/white" />
 
         <Button
             android:id="@+id/buttonCalc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="40sp"
-            android:layout_marginTop="15sp"
             android:layout_marginLeft="40sp"
+            android:layout_marginTop="15sp"
             android:layout_marginRight="40sp"
+            android:layout_marginBottom="40sp"
             android:background="@drawable/button"
             android:padding="10sp"
-            android:text="Калькулятор"
+            android:text="@string/buttonCalc"
             android:textColor="@color/white" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

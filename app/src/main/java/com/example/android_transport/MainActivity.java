@@ -6,8 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.DialogInterface; // для конструктора dialog
-import android.content.pm.ActivityInfo;
+import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 
@@ -23,6 +24,16 @@ public class MainActivity extends AppCompatActivity {
         //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); // вертикальная
         setContentView(R.layout.activity_main);
         addListenerOnButton();
+
+        Button mDialButton = (Button) findViewById(R.id.buttonCall);
+        mDialButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String phoneNo = "89996989548";
+                String dial = "tel:" + phoneNo;
+                startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse(dial)));
+            }
+        });
     }
 
     private void addListenerOnButton(){

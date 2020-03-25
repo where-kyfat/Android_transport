@@ -3,4 +3,20 @@
     <string name="buttonCall">Звонок диспетчеру</string>
     <string name="buttonOrder">Заказать машину</string>
     <string name="buttonCalc">Калькулятор</string>
+
+    <string name="textView1">Ваше имя фамилия</string>
+    <string name="textView2">Номер телефона</string>
+    <string name="textView3">E-mail</string>
+    <string name="textView4">Пункт погрузки</string>
+    <string name="textView5">Пункт выгрузки</string>
+    <string name="textView6">Вид транспорта</string>
+
+    <string name="buttonOrderComplete">Сделать заказ</string>
+
+    <string-array name="type_of_transport">
+        <item>Легковой</item>
+        <item>Грузовой</item>
+        <item>Железнодорожный</item>
+        <item>Воздушный</item>
+    </string-array>
 </resources>

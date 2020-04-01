@@ -21,7 +21,7 @@ import android.widget.Toast;
 
 public class OrderActivity extends AppCompatActivity {
 
-    String[] transport_type = { "Легковой", "Грузовой", "Железнодорожный", "Воздушный" };
+    String[] transport_type = { "Тентованный", "Рефрижератор", "Самосвал", "Платформа" };
 
     Context mainContext;
     String title;
@@ -107,10 +107,18 @@ public class OrderActivity extends AppCompatActivity {
                         System.getProperty("line.separator") + "Пункт выгрузки: " +
                             ((EditText)findViewById(R.id.editText5)).getText().toString() +
                         System.getProperty("line.separator") + "Вид транспорта: " +
-                            ((Spinner)findViewById(R.id.spinner1)).getSelectedItem().toString();
+                            ((Spinner)findViewById(R.id.spinner1)).getSelectedItem().toString() +
+                        System.getProperty("line.separator") + "Вес: " +
+                            ((EditText)findViewById(R.id.editText6)).getText().toString() +
+                        System.getProperty("line.separator") + "Объём: " +
+                            ((EditText)findViewById(R.id.editText7)).getText().toString() +
+                        System.getProperty("line.separator") + "Дата перевозки: " +
+                            ((EditText)findViewById(R.id.editText8)).getText().toString() +
+                        System.getProperty("line.separator") + "Комментарии: " +
+                            ((EditText)findViewById(R.id.editText9)).getText().toString();
 
                 from = "transport.order123@gmail.com";
-                to = "transport.order123@gmail.com";
+                to = "expustrans@list.ru";
 
                 MailSenderClass sender = new MailSenderClass("transport.order123@gmail.com",
                         "zaq12WSX34");

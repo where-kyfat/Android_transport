@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         mDialButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String phoneNo = "89996989548";
+                String phoneNo = "89185864386";
                 String dial = "tel:" + phoneNo;
                 startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse(dial)));
             }

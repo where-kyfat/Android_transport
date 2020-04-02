@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    tools:context=".MainActivity">
+
+    <LinearLayout 
+		<!-- 
+			так называемая сетка, необходимая для корректного отображения объектов
+		-->
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+			<!-- объект 'картинка' и его поля-->
+            android:id="@+id/imageView1"
+			<!-- поля с ключевым словом layout опреляют положение в сетке-->
+            android:layout_width="match_parent" <!-- занимает все свободное пространство -->
+            android:layout_height="354dp"
+            android:layout_marginBottom="15sp"
+            android:paddingTop="15sp" <!-- расстояние между объектом сверху (в этом случае
+				отступ от начала экрана -->
+            android:paddingBottom="15sp"
+            app:srcCompat="@drawable/main_menu_icon" <!-- адрес самой картинки -->/>
+
+        <Button
+			<!-- объект 'кнопка' -->
+            android:id="@+id/buttonCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:background="@drawable/button" <!-- адрес фона кнопки -->
+            android:padding="10sp"
+            android:text="@string/buttonCall" <!-- адрес текста кнопки -->
+            android:textColor="@color/white" <!-- адрес цвета кнопки -->/>
+
+        <Button
+            android:id="@+id/buttonOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="40sp"
+            android:background="@drawable/button"
+            android:padding="10sp"
+            android:text="@string/buttonOrder"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">РосТрансЭкспус</string>
+    <string name="buttonCall">Звонок диспетчеру</string>
+    <string name="buttonOrder">Заказать машину</string>
+    <string name="buttonCalc">Калькулятор</string>
+
+    <string name="textView1">Ваше имя</string>
+    <string name="textView2">Номер телефона</string>
+    <string name="textView3">E-mail</string>
+    <string name="textView4">Пункт погрузки</string>
+    <string name="textView5">Пункт выгрузки</string>
+    <string name="textView6">Вид транспорта</string>
+    <string name="textView7">Вес</string>
+    <string name="textView8">Объём</string>
+    <string name="textView9">Дата перевозки</string>
+    <string name="textView10">Комментарии</string>
+
+    <string name="buttonOrderComplete">Сделать заказ</string>
+
+    <string-array name="type_of_transport">
+        <item>Тентованный</item>
+        <item>Рефрижератор</item>
+        <item>Самосвал</item>
+        <item>Платформа</item>
+    </string-array>
+</resources>
